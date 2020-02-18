@@ -1,0 +1,8 @@
+{
+  "appId": "com.exl.exlconclave",
+  "appName": "EXL Conclave",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

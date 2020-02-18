@@ -1,0 +1,7 @@
+{
+  "name": "EXLConclave",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

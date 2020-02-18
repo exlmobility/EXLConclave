@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">EXL Conclave</string>
+    <string name="title_activity_main">EXL Conclave</string>
+    <string name="package_name">com.exl.exlconclave</string>
+    <string name="custom_url_scheme">com.exl.exlconclave</string>
+</resources>

@@ -1,0 +1,55 @@
+
+
+.login {
+    &-form-container{
+        margin-top: 28%;
+    }
+    &-container {
+        --background: none;
+        background: url('../../../assets/img/bg-img4.png');
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-title {
+        font-size:3rem; 
+        font-weight: bold;  
+        color:var(--ion-color-primary);
+        text-align: center;
+        margin-top: 30%;
+    }
+
+
+    &-input {
+        color: white;
+        &-container{
+            --background: transparent;
+            margin-left: 2.4rem;
+            margin-right: 2.4rem;
+
+            &-second{
+                margin-top: 1.6rem;
+            }
+        }
+        &-label{
+            color: white;
+        }
+  
+    }
+
+    &-button{
+            top: 3rem;
+            position: absolute;
+            left: 2rem;
+            right: 2rem;
+
+            &-container{
+                position: relative;
+            }
+        
+    }
+}
+
+
+

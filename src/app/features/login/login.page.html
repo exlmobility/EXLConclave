@@ -1,0 +1,34 @@
+<ion-content class="login login-container">
+  <div class="login-title">
+    <p>EXL SENTINEL </p>
+  </div>
+
+  <form class="login-form-container" (ngSubmit)="onPressLogin(f)" novalidate>
+    <ion-item class="login-input-container">
+      <ion-label class="login-input-label" position="floating">Username</ion-label>
+      <ion-input autofocus class="login-input" disabled=false maxlength="20" type="text"
+        [(ngModel)]="loginCred.userName" name="userName">
+      </ion-input>
+      <ion-icon class="login-input-icon" src="../../../assets/icons/person-outline.svg" slot="start"></ion-icon>
+    </ion-item>
+
+    <ion-item class="login-input-container login-input-container-second">
+      <ion-label class="login-input-label" position="floating">Password</ion-label>
+      <ion-input class="login-input" autocomplete="off" type="password" disabled=false maxlength="50"
+        [(ngModel)]="loginCred.password" name="password">
+
+      </ion-input>
+      <ion-icon src="../../../assets/icons/lock-closed-outline.svg" slot="start"></ion-icon>
+
+    </ion-item>
+  </form>
+
+  <div class="login-button-container">
+    <ion-button class="login-button" (click)="onPressLogin()">
+      LOGIN
+    </ion-button>
+  </div>
+
+
+
+</ion-content>

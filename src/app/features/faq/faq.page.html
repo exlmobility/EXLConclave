@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-toolbar mode="ios">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref='/home'></ion-back-button>
+        </ion-buttons>
+        <ion-title>FAQ</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="faq">
+
+
+
+    <img class="faq-logo" src="/assets/img/exl-logo.png" alt="">
+
+
+    <ion-card>
+        <ion-grid class="faq-grid scale-in-ver-top" no-padding style="margin: -1px">
+            <ion-row class="faq-question-row" (click)="onSelectQuestion(1)">
+                <div class="faq-question"> Q. What is SENTINEL ?</div>
+            </ion-row>
+            <ion-row class="faq-answer-row scale-in-ver-top " *ngIf="selectedQuestionIndex == 1">
+                <div class="faq-answer">
+                    <p> SENTINEL will offer an easy way to Report Information Security and Data Privacy
+                        related Incidents from user’s mobile.</p>
+                </div>
+            </ion-row>
+
+            <ion-row class="faq-question-row" (click)="onSelectQuestion(2)">
+                <div class="faq-question"> Q. How do I use SENTINEL ?</div>
+            </ion-row>
+            <ion-row class="faq-answer-row scale-in-ver-top" *ngIf="selectedQuestionIndex == 2">
+                <div class="faq-answer">
+                    1. Login using your Username and Password.<br>
+                    2. Select Report an Incident or Request a Call from InfoSec option from landing
+                    screen.<br>
+                    3. You can report any Incident from Report an Incident screen.<br>
+                    4. You can request a Call back from Request a
+                    Call from InfoSec screen.
+                    <!-- 1. Register your mobile number using website <a href="https://pwdreset.exlservice.com">https://pwdreset.exlservice.com</a> from your restricted network .<br> 2. Reset your domain account password.<br> 2. Unlock your domain account. -->
+                </div>
+            </ion-row>
+
+            <ion-row class="faq-question-row" (click)="onSelectQuestion(3)">
+                <div class="faq-question"> Q. How safe are my credentials ?</div>
+            </ion-row>
+            <ion-row class="faq-answer-row scale-in-ver-top" *ngIf="selectedQuestionIndex == 3">
+                <div class="faq-answer">
+                    <p> Your credentials are fully protected.</p>
+                </div>
+            </ion-row>
+
+            <ion-row class="faq-question-row" (click)="onSelectQuestion(4)">
+                <div class="faq-question"> Q. What is Anonymous ?</div>
+            </ion-row>
+            <ion-row class="faq-answer-row scale-in-ver-top" *ngIf="selectedQuestionIndex == 4">
+                <div class="faq-answer">
+                    <p> In Anonymous mode, the Identity of the user who is reporting the Incident will be
+                        hidden.</p>
+                </div>
+            </ion-row>
+
+        </ion-grid>
+
+    </ion-card>
+
+</ion-content>
+<ion-footer class="footer">
+    <div class="footer-text">
+        For Support/Queries
+    </div>
+    <div class="footer-text footer-text--bold">
+        #AppSupport@exlservice.com
+    </div>
+</ion-footer>

@@ -4,14 +4,33 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'login',
+    loadChildren: () => import('./features/login/login.module').then(m => m.LoginPageModule)
+  },
+  {
+    path: 'faq',
+    loadChildren: () => import('./features/faq/faq.module').then(m => m.FaqPageModule)
+  },
+  {
+    path: 'register-mobile-modal',
+    loadChildren: () => import('./modals/register-mobile-modal/register-mobile-modal.module').then(m => m.RegisterMobileModalPageModule)
+  },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./features/about-us/about-us.module').then(m => m.AboutUsPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./features/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   }
+
 ];
+
+
 
 @NgModule({
   imports: [
@@ -19,4 +38,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
